@@ -2,6 +2,9 @@
 import React, { useEffect, useState } from "react";
 import { UserAuth } from "../context/AuthContext";
 import Spinner from "../components/Spinner";
+import Profile from "../components/BusinessInfo";
+import Sidebar from "../components/Sidebar";
+import Home from "../page";
 
 const page = () => {
   const { user } = UserAuth();
@@ -16,16 +19,18 @@ const page = () => {
   }, [user]);
 
   return (
-    <div className="p-4">
+    <div>
       {loading ? (
         <Spinner />
       ) : user ? (
-        <p>
-          Welcome, {user.displayName} - you are logged in to the profile page -
-          a protected route.
-        </p>
+        <Sidebar>
+          <div className="bg-gray-100 min-h-screen">
+            {" "}
+            <Profile />
+          </div>
+        </Sidebar>
       ) : (
-        <p>You must be logged in to view this page - protected route.</p>
+        <Home />
       )}
     </div>
   );

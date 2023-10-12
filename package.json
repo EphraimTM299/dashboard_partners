@@ -6,16 +6,49 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "email": "email dev --dir app/emails"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@reach/combobox": "^0.18.0",
+    "@react-email/button": "0.0.10",
+    "@react-email/components": "^0.0.7",
+    "@react-email/html": "^0.0.4",
+    "@react-pdf/renderer": "^3.1.12",
+    "@sendgrid/mail": "^7.7.0",
+    "@uc-react-ui/multiselect": "^0.1.1",
     "autoprefixer": "10.4.14",
+    "axios": "^1.5.1",
+    "chart.js": "^4.4.0",
+    "combobox": "^1.0.1",
     "encoding": "^0.1.13",
     "firebase": "^9.23.0",
+    "flowbite-react": "^0.6.3",
+    "geokit": "^1.1.0",
+    "load-google-maps-api": "^2.0.2",
+    "moment": "^2.29.4",
     "next": "13.4.7",
+    "next-auth": "^4.23.2",
     "postcss": "8.4.24",
     "react": "18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-charts": "^2.0.0-beta.7",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.2"
+    "react-email": "1.9.5",
+    "react-export-table-to-excel": "^1.0.6",
+    "react-hook-form": "^7.47.0",
+    "react-icons": "^4.11.0",
+    "react-tooltip": "^5.21.5",
+    "resend": "latest",
+    "tailwindcss": "3.3.2",
+    "use-google-maps-script": "^0.1.2",
+    "use-places-autocomplete": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.24",
+    "typescript": "5.2.2"
   }
 }
