@@ -108,8 +108,6 @@ export default function ActiveOrders() {
 
   return (
     <div className="bg-gray-100 ">
-      {/* create order component */}
-
       {/* active order component */}
       <div className="overflow-hidden rounded-lg border border-gray-200 shadow-md m-5">
         <div className="m-5 font-semibold text-2xl ">Active Orders</div>
